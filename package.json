@@ -1,0 +1,35 @@
+{
+  "name": "interview",
+  "description": "Woopra interview test",
+  "version": "0.1.0",
+  "homepage": "https://github.com/woopra/interview",
+  "author": {
+    "name": "Billy Vong",
+    "email": "billy@woopra.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/woopra/interview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woopra/interview/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/woopra/interview/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/interview",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [],
+  "dependencies": {
+    "mocha": "~1.8.1",
+    "chai": "~1.5.0"
+  }
+}

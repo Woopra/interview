@@ -62,11 +62,14 @@ describe('Woopra Interview', function() {
     });
     
     // TODO: Write your tests here
-    describe('tests for `attachCampaignData()`', function() {
-        it('your test', function() {
-            expect(false).to.be.true;
+    describe('woopra._campaignData should only contain woopra_source, woopra_content', function() {
+        it('value should be test and billy', function() {
+          var woo = woopra._campaignData;
+          expect(woo.woopra_source).to.equal('test');
+          expect(woo.woopra_content).to.equal('billy'); 
+          expect(Object.keys(woo).length).to.equal(2);
         });
-    });
+    });  
 
 });
 

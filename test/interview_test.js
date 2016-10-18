@@ -12,7 +12,7 @@ var WoopraTest = require('../lib/interview').WoopraTest,
 describe('Woopra Interview', function() {
     var woopra;
 
-    // this runs before each test (in each it() after this) 
+    // this runs before each test (in each it() after this)
     // don't worry about this when writing your own test
     beforeEach(function() {
         woopra = new WoopraTest();
@@ -60,13 +60,13 @@ describe('Woopra Interview', function() {
             expect(woopra.option('age')).to.equal(28);
         });
     });
-    
+
     // TODO: Write your tests here
     describe('tests for `attachCampaignData()`', function() {
-        it('your test', function() {
-            expect(false).to.be.true;
+        it('_campaignData should contain two values', function() {
+            expect(woopra._campaignData.woopra_source).to.equal('test');
+            expect(woopra._campaignData.woopra_content).to.equal('billy');
         });
     });
 
 });
-
